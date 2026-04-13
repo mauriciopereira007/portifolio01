@@ -3,7 +3,6 @@
 ───────────────────────────────────────────────── */
 const dados = {
   nome: "Mauricio da Silva Pereira",
-  iniciais: "MP",
   subtitulo: "Se aventurando na programação",
   tecnologias: ["JavaScript", "Node.js"],
   sobre: [
@@ -49,7 +48,7 @@ const dados = {
 ───────────────────────────────────────────────── */
 document.getElementById("heroName").textContent = dados.nome;
 document.getElementById("heroSubtitle").textContent = dados.subtitulo;
-document.getElementById("avatarInitials").textContent = dados.iniciais;
+// document.getElementById("avatarInitials").textContent = dados.iniciais; // Removed text content assignment
 document.getElementById("sobreTexto1").textContent = dados.sobre[0];
 document.getElementById("sobreTexto2").textContent = dados.sobre[1];
 
