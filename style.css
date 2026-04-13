@@ -181,7 +181,17 @@ section { padding: 5rem 2rem; }
   justify-content: center;
 }
 
-.avatar {
+/* Updated avatar class to accommodate a photo */
+.avatar-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover; /* Ensures the photo is not squashed and fills the circle */
+  box-shadow: 0 0 60px rgba(108,99,255,0.3);
+}
+
+/* The old avatar class for text initials is now a commented-out fallback */
+/* .avatar {
   width: 220px;
   height: 220px;
   border-radius: 50%;
@@ -194,6 +204,7 @@ section { padding: 5rem 2rem; }
   color: #fff;
   box-shadow: 0 0 60px rgba(108,99,255,0.3);
 }
+*/
 
 .sobre-text p {
   color: var(--muted);
